@@ -2,7 +2,7 @@ const Hero = () => (
   <section className="hero">
     <div className="hero-container">
       <img
-        src="images/Abdelrahman.jpg"
+        src="Abdelrahman.jpg"
         alt="Profile"
         className="hero-image"
       />
@@ -27,4 +27,5 @@ const Hero = () => (
 );
 
 const rootHero = ReactDOM.createRoot(document.getElementById('Hero'));
+
 rootHero.render(<Hero />);
