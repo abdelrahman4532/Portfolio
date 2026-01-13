@@ -1,0 +1,13 @@
+body {
+    font-family: 'GraphikBlack', sans-serif;
+    margin: 0;
+    padding: 0;
+    background:#ffe6db;
+}
+
+@font-face {
+    font-family: "GraphikBlack";
+    src: url("../fonts/GraphikBlack.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}

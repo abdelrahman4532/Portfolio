@@ -1,150 +1,30 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl" class="scroll-smooth">
+<html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdelrahman | AI Software Engineer</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        body { font-family: 'Cairo', sans-serif; background-color: #030712; color: #f3f4f6; overflow-x: hidden; }
-        .glow-mesh { background: radial-gradient(circle at 50% 0%, #1e1b4b 0%, #030712 50%); }
-        .glass-card { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.1); transition: all 0.4s ease; }
-        .glass-card:hover { border-color: #22d3ee; background: rgba(34, 211, 238, 0.05); transform: translateY(-5px); }
-        .text-gradient { background: linear-gradient(135deg, #22d3ee 0%, #818cf8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .input-field { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); color: white; transition: all 0.3s ease; width: 100%; padding: 1.25rem; border-radius: 1rem; }
-        .input-field:focus { border-color: #22d3ee; outline: none; box-shadow: 0 0 20px rgba(34, 211, 238, 0.15); }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdelrahman | AI Software Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/Navbar.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/Hero.css">
 </head>
-<body class="glow-mesh text-right">
+<body>
+    <div id="Navbar"></div>
+    <div id="Hero"></div>
+    <div id="Skills"></div>
+    <div id="ContactForm"></div>
 
-    <nav class="fixed top-0 w-full z-[100] px-6 py-6">
-        <div class="max-w-7xl mx-auto flex justify-between items-center glass-card px-8 py-4 rounded-3xl border-white/5">
-            <div class="text-2xl font-black text-gradient">ABDELRAHMAN</div>
-            <div class="hidden lg:flex gap-10 text-sm font-bold opacity-80">
-                <a href="#services" class="hover:text-cyan-400 transition">الخدمات</a>
-                <a href="#projects" class="hover:text-cyan-400 transition">المشاريع</a>
-                <a href="#tech" class="hover:text-cyan-400 transition">التقنيات</a>
-                <a href="#faq" class="hover:text-cyan-400 transition">الأسئلة</a>
-                <a href="#contact" class="hover:text-cyan-400 transition">تواصل معي</a>
-            </div>
-            <a href="https://t.me/@Abdelrahman010101" class="bg-cyan-500 text-black px-6 py-2.5 rounded-2xl font-black text-sm hover:scale-105 transition-all">ابدأ مشروعك</a>
-        </div>
-    </nav>
-
-    <section class="relative pt-60 pb-20 px-6">
-        <div class="max-w-6xl mx-auto text-center relative z-10">
-            <div class="inline-flex items-center gap-2 px-6 py-2 rounded-full glass-card text-cyan-400 text-sm font-bold mb-10">
-                <span class="flex h-2 w-2 rounded-full bg-cyan-400 animate-pulse"></span>
-                متاح الآن للمشاريع البرمجية المتقدمة
-            </div>
-            <h1 class="text-5xl md:text-8xl font-black mb-8 leading-[1.1]">
-                أبني حلولاً ذكية <br> <span class="text-gradient">تسبق المستقبل</span>
-            </h1>
-            <p class="text-xl text-gray-400 max-w-3xl mx-auto mb-12">أنا عبد الرحمن، مطور برمجيات متخصص في تحويل الأفكار المعقدة إلى منتجات رقمية (MVPs) عالية الأداء.</p>
-        </div>
-    </section>
-
-    <section class="max-w-7xl mx-auto px-6 py-10">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div class="glass-card p-8 rounded-3xl text-center">
-                <div class="text-3xl font-black text-cyan-400 mb-2">2h</div>
-                <div class="text-gray-500 text-xs">أسرع تسليم MVP</div>
-            </div>
-            <div class="glass-card p-8 rounded-3xl text-center">
-                <div class="text-3xl font-black text-blue-400 mb-2">AI</div>
-                <div class="text-gray-500 text-xs">تكامل ذكاء اصطناعي</div>
-            </div>
-            <div class="glass-card p-8 rounded-3xl text-center">
-                <div class="text-3xl font-black text-emerald-400 mb-2">100%</div>
-                <div class="text-gray-500 text-xs">دعم فني مستمر</div>
-            </div>
-        </div>
-    </section>
-
-    <section id="services" class="max-w-7xl mx-auto px-6 py-20">
-        <h2 class="text-4xl font-black mb-12 text-center md:text-right">خدمات <span class="text-gradient">احترافية</span></h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="glass-card p-10 rounded-[2.5rem]">
-                <div class="bg-cyan-500/20 w-14 h-14 rounded-2xl flex items-center justify-center mb-6 text-cyan-400 text-2xl">
-                    <i class="fa-solid fa-bolt"></i>
-                </div>
-                <h3 class="text-2xl font-bold mb-4">برمجة الـ MVP</h3>
-                <p class="text-gray-400">تحويل فكرتك إلى تطبيق حقيقي جاهز للسوق في وقت قياسي جداً.</p>
-            </div>
-            <div class="glass-card p-10 rounded-[2.5rem]">
-                <div class="bg-purple-500/20 w-14 h-14 rounded-2xl flex items-center justify-center mb-6 text-purple-400 text-2xl">
-                    <i class="fa-solid fa-robot"></i>
-                </div>
-                <h3 class="text-2xl font-bold mb-4">أنظمة الـ AI</h3>
-                <p class="text-gray-400">دمج موديلات GPT و LLMs داخل أنظمتك لتوفير الوقت والجهد.</p>
-            </div>
-            <div class="glass-card p-10 rounded-[2.5rem]">
-                <div class="bg-blue-500/20 w-14 h-14 rounded-2xl flex items-center justify-center mb-6 text-blue-400 text-2xl">
-                    <i class="fa-solid fa-code"></i>
-                </div>
-                <h3 class="text-2xl font-bold mb-4">تطبيقات ويب</h3>
-                <p class="text-gray-400">تصميم وتطوير مواقع ويب سريعة، متجاوبة، وآمنة تماماً.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="tech" class="max-w-7xl mx-auto px-6 py-20">
-        <div class="glass-card p-10 rounded-[3rem]">
-            <h2 class="text-2xl font-black mb-8">التقنيات المستخدمة</h2>
-            <div class="flex flex-wrap gap-3">
-                <span class="px-4 py-2 bg-white/5 rounded-xl border border-white/10 text-sm font-bold">Js</span>
-                <span class="px-4 py-2 bg-white/5 rounded-xl border border-white/10 text-sm font-bold">Tailwind CSS</span>
-                <span class="px-4 py-2 bg-white/5 rounded-xl border border-white/10 text-sm font-bold">Python & AI</span>
-                <span class="px-4 py-2 bg-white/5 rounded-xl border border-white/10 text-sm font-bold">CSS</span>
-                <span class="px-4 py-2 bg-white/5 rounded-xl border border-white/10 text-sm font-bold">HTML</span>
-            </div>
-        </div>
-    </section>
-
-    <section id="faq" class="max-w-4xl mx-auto px-6 py-20">
-        <h2 class="text-3xl font-black mb-8 text-center">الأسئلة الشائعة</h2>
-        <div class="space-y-4">
-            <details class="glass-card p-6 rounded-2xl cursor-pointer group">
-                <summary class="font-bold list-none flex justify-between items-center">كم يستغرق بناء الموقع؟ <i class="fa-solid fa-chevron-down text-cyan-400 transition group-open:rotate-180"></i></summary>
-                <p class="mt-4 text-gray-400 text-sm leading-relaxed">يعتمد ذلك على حجم المشروع، ولكن الـ MVP الأساسي يتم تسليمه خلال 2 ساعة فقط.</p>
-            </details>
-            <details class="glass-card p-6 rounded-2xl cursor-pointer group">
-                <summary class="font-bold list-none flex justify-between items-center">هل الموقع يكون متوافقاً مع الموبايل؟ <i class="fa-solid fa-chevron-down text-cyan-400 transition group-open:rotate-180"></i></summary>
-                <p class="mt-4 text-gray-400 text-sm leading-relaxed">بكل تأكيد، جميع أعمالي Responsive وتعمل بكفاءة على كافة الشاشات.</p>
-            </details>
-        </div>
-    </section>
-
-    <section id="contact" class="max-w-5xl mx-auto px-6 py-20">
-        <div class="glass-card p-10 md:p-16 rounded-[3rem]">
-            <h2 class="text-4xl font-black mb-2 text-center text-gradient">تحدث معي</h2>
-            <p class="text-center text-gray-500 mb-10">سأرد عليك فوراً لمناقشة فكرتك</p>
-            
-            <form action="https://getform.io/f/bxovykga" method="POST" class="space-y-6">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <input type="text" name="name" required placeholder="الاسم بالكامل" class="input-field">
-                    <input type="tel" name="phone" required placeholder="رقم الواتساب" class="input-field" dir="ltr">
-                </div>
-                <textarea name="message" rows="5" required placeholder="اشرح لي فكرتك..." class="input-field"></textarea>
-                <button type="submit" class="w-full bg-cyan-500 hover:bg-cyan-400 text-black py-5 rounded-2xl font-black text-lg transition-all flex items-center justify-center gap-3">
-                    إرسال البيانات الآن <i class="fa-solid fa-paper-plane"></i>
-                </button>
-            </form>
-        </div>
-    </section>
-
-    <footer class="max-w-7xl mx-auto px-6 py-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
-        <p>عبد الرحمن © 2026</p>
-        <div class="flex gap-4">
-            <a href="https://t.me/@Abdelrahman010101" class="hover:text-cyan-400"><i class="fa-brands fa-telegram text-xl"></i></a>
-        </div>
-    </footer>
-
-    <script type="text/javascript">
-    var sc_project=13195768; var sc_invisible=1; var sc_security="7d1cf04e"; 
-    </script>
+    <script type="text/babel" src="Ui/Skills.js"></script>
+    <script type="text/babel" src="Ui/Hero.js"></script>
+    <script type="text/babel" src="Ui/Contact.js"></script>
+    <script type="text/babel" src="Ui/Navbar.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
 </body>
 </html>

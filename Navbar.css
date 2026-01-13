@@ -1,0 +1,84 @@
+.navbar {
+    width: 900px;
+    height: 60px;
+    margin: 30px auto;
+    background-color: rgb(255, 239, 224);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 100px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.links {
+    display: flex;
+    gap: 25px;
+}
+
+.links a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.links a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #ff7f50;
+    transition: width 0.3s;
+}
+
+.links a:hover {
+    color: #ff7f50;
+}
+
+.links a:hover::after {
+    width: 100%;
+}
+
+.boton-elegante {
+    font-family: 'GraphikBlack', sans-serif;
+    padding: 9px 15px;
+    border: 1px solid #000000;
+    background-color: #ffe1d6;
+    color: #000000;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.4s ease;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+.boton-elegante::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 70%);
+    transform: scale(0);
+    transition: transform 0.5s ease;
+}
+
+.boton-elegante:hover::after {
+    transform: scale(4);
+}
+
+.boton-elegante:hover {
+    border-color: #ffe1d6;
+    background: rgb(255, 239, 224);
+}

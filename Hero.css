@@ -1,0 +1,66 @@
+.hero {
+  width: 100%;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  font-family: sans-serif;
+  direction: rtl;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 40px;
+  max-width: 900px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.hero-image {
+  width: 250px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #6e5041;
+  margin: 0 0 10px 0;
+}
+
+.name {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #7b4f3b;
+  margin: 0 0 10px 0;
+}
+
+.role {
+  font-size: 1.1rem;
+  color: #4d3a33;
+  margin: 0 0 10px 0;
+}
+
+.description {
+  font-size: 1rem;
+  color: #4d3a33;
+  margin: 0 0 15px 0;
+}
+
+.social-links a {
+  font-size: 20px;
+  color: #7b4f3b;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 8px;
+  transition: transform 0.3s, color 0.3s;
+}
